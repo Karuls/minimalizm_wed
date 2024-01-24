@@ -128,19 +128,20 @@ color: rgb(75, 75, 75);
 }
 .sptaite-container{display: flex;
 align-items: center;
-margin-top: -230px;}
+margin-top: -200px;}
 .sprite-image{
-height: 123px;
-width: 71px;
-background: url(smur-sprite.png) 0px 0px;
-animation: play 0.8s steps(16) infinite,
+height: 50px;
+width: 27.3px;
+background: url(smur-sprite2.png) 0px 0px;
+animation: play 1s steps(16) infinite,
 step 10s linear infinite;
 position: absolute;
 left: 15%;
 }
 
+
 @keyframes play {
-    100%{background-position: -1135px;}
+    100%{background-position: -477px;}
 }
 
 @keyframes step {
