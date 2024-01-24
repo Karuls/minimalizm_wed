@@ -1,0 +1,152 @@
+body{margin: 0px;
+background-color: rgb(255, 255, 255);}
+header{ display: inline-block;
+   
+width: 100%;
+height: 90px;
+margin-top: -2px;
+}
+
+.section{margin-left: 600px;
+margin-top: 35px;
+}
+
+.section > div {display: inline-block;
+    padding: 5px 7px;
+   }
+
+.section > div:hover{background-color: rgb(74, 71, 71);
+color: white}
+
+.logo{ float: left;
+    display: inline-block;
+margin-left: 410px;
+color: white;
+background-color: rgb(64, 62, 62);
+padding: 15px 10px 0px 10px;
+animation: haze 5s linear infinite;
+}
+
+.logo > p{font-size: 12px;
+margin-top: 3px;
+text-align: center;}
+
+.logo > a{ letter-spacing: 8px;
+font-weight: bold;
+font-size: 19px;
+color: white;
+text-align: center;
+padding-left: 6px;}
+
+div > img { width: 100%;
+height: 400px;}
+
+.blur:hover img{filter: blur(3px) brightness(60%);
+transition: 2s;}
+
+.blur > p{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    color: #faf3f3;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;}
+
+.blur:hover p{
+opacity: 1;
+transition: 1.5s;}
+
+.welcome{height: 70px;
+text-align: center;
+padding-top: 30px;
+font-size: 21px;}
+
+.welcome > a{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+word-spacing: 3px;
+font-weight:bold;}
+
+.welcome > a > span{ background-color: rgb(57, 56, 56); 
+padding: 1px 5px;
+color: white;
+font-size: 20px;}
+
+.line_shadow {
+    margin: 0 250px;
+    padding: 0;
+    height: 10px;
+    border: none;
+    border-top: 1px solid  rgba(64, 62, 62, 0.69);
+    box-shadow: 0px 10px 10px -10px #8c8b8b inset;
+    }
+
+.galerry{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+}
+
+.galerry > div{
+display: inline-block;
+vertical-align: middle;
+margin: 0 12px;
+width: 213px;
+}
+
+.img2{width: 50px; height: 50px;
+float: left;}
+
+.galerry div:hover img{transform: scale(1.1);
+    border: 3px groove #5f5f5f;
+border-radius: 50%;
+padding: 1.5px;
+box-shadow: 0px 10px 25px  #09e7e7 inset;
+transition: 0.15s;}
+
+.galerry> div > a{
+font-family: 'Exo 2', sans-serif;
+font-size: 19px;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.936);
+margin-left: 20px;
+}
+.galerry > div:hover a{text-shadow: 
+    0px 0px 5px  #09e7e7,
+    0px 0px 10px  #09e7e7;
+transition: 0.7s;}
+
+.galerry> div > p{
+color: rgb(75, 75, 75);
+
+}
+
+@keyframes haze {
+    0%{color: white;}
+    50%{color:  rgb(64, 62, 62);}
+    100%{color: white;}
+}
+.sptaite-container{display: flex;
+align-items: center;
+margin-top: -230px;}
+.sprite-image{
+height: 123px;
+width: 71px;
+background: url(smur-sprite.png) 0px 0px;
+animation: play 0.8s steps(16) infinite,
+step 10s linear infinite;
+position: absolute;
+left: 15%;
+}
+
+@keyframes play {
+    100%{background-position: -1135px;}
+}
+
+@keyframes step {
+    100%{
+        left: 80%;
+    }
+}
+.sprite-image{ filter: drop-shadow(11px 12px 8px #103e79d8);}
+
